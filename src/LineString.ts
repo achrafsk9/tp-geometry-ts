@@ -3,10 +3,10 @@ import Geometry from "./Geometry";
 import Point from "./Point";
 
 export default class LineString implements Geometry {
-  private points?: Point[];
+  private points: Point[];
 
   constructor(points?: Point[]) {
-    this.points = points;
+    this.points = points ?? [];
   }
 
   getPoints(): Point[] {

@@ -1,10 +1,6 @@
 import { describe, it, expect } from "vitest";
 import Point from "../src/Point";
 
-
-import { describe, it, expect } from "vitest";
-import Point from "../src/Point";
-
 describe("test Point", () => {
   it("test default constructor", () => {
     const p = new Point();
