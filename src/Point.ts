@@ -22,5 +22,8 @@ export default class Point {
   getType(): string {
     return "Point";
   }
-
+  
+  isEmpty(): boolean {
+    return this.coordinate.length === 0;
+  }
 }
