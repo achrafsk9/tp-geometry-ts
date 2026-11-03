@@ -43,4 +43,10 @@ export default class Point implements Geometry {
     return new Point([...this.coordinate]);
   }
 
+  getEnvelope(): Envelope {
+    const builder = new EnvelopeBuilder();
+    builder.insert(this.coordinate);
+    return builder.build();
+  }
+
 }
